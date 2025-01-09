@@ -1,0 +1,54 @@
+/* myreports.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #000080;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#report-summary {
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000080;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
