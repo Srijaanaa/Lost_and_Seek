@@ -35,7 +35,6 @@ CREATE TABLE IF NOT EXISTS matched_items (
     lost_item_id INT NOT NULL,
     found_item_id INT NOT NULL,
     admin_id INT NOT NULL,
-    resolution_details TEXT,
     match_status ENUM('pending', 'approved', 'rejected') DEFAULT 'pending',
     match_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (lost_item_id) REFERENCES items(id),
