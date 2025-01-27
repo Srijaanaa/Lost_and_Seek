@@ -25,10 +25,9 @@ CREATE TABLE IF NOT EXISTS items (
     contact_info VARCHAR(100) NOT NULL,
     image_path VARCHAR(255),
     status ENUM('lost', 'found', 'pending') DEFAULT 'lost',
-    category_id INT,
     date_reported TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-    FOREIGN KEY (category_id) REFERENCES categories(id)
+   
 );
 
 CREATE TABLE IF NOT EXISTS matched_items (
